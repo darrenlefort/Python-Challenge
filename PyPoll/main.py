@@ -1,7 +1,7 @@
 import csv
 import os
 
-pathway = os.path.join("..", "PyPoll_data.csv")
+pathway = os.path.join("Resources", "PyPoll_data.csv")
 
 with open (pathway) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
