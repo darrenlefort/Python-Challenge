@@ -1,1 +1,11 @@
 Election Results
+---------------------------
+Total Votes: 
+---------------------------
+Winner Name: 
+2nd Place Name: 
+3rd Place Name: 
+4th Place Name: 
+---------------------------
+Winner Name: 
+---------------------------
