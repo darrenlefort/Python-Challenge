@@ -8,12 +8,16 @@ candidate_votes = {}
 total_votes = 0
 winning_count = 0
 winning_person = ""
+winning_percent = 0
 second_count = 0
 second_person = ""
+second_percent = 0
 third_count = 0
 third_person = ""
+third_percent = 0
 fourth_count = 0
 fourth_person = ""
+fourth_percent = 0
 
 with open (pathway) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
@@ -33,15 +37,19 @@ print(candidate_votes)
 
 winning_count = str(list(candidate_votes.values())[0])
 winning_person = list(candidate_votes)[0]
+winning_percent = str(round(((int(winning_count) / total_votes) * 100), 0))
 
 second_count = str(list(candidate_votes.values())[1])
 second_person = list(candidate_votes)[1]
+second_percent = str(round(((int(second_count) / total_votes) * 100), 0))
 
 third_count = str(list(candidate_votes.values())[2])
 third_person = list(candidate_votes)[2]
+third_percent = str(round(((int(third_count) / total_votes) * 100), 0))
 
 fourth_count = str(list(candidate_votes.values())[3])
 fourth_person = list(candidate_votes)[3]
+fourth_percent = str(round(((int(fourth_count) / total_votes) * 100), 0))
 
 txt_header = "Election Results"
 
@@ -50,10 +58,10 @@ txt_lines = [
     ["---------------------------"], 
     ["Total Votes: " + str(total_votes)], 
     ["---------------------------"], 
-    ["Winner Name: " + winning_person + " with a vote count of " + winning_count], 
-    ["2nd Place Name: " + second_person + " with a vote count of " + second_count], 
-    ["3rd Place Name: " + third_person + " with a vote count of " + third_count], 
-    ["4th Place Name: " + fourth_person + " with a vote count of " + fourth_count], 
+    ["Winner Name: " + winning_person + ": with " + winning_percent + "% and a vote count of " + winning_count], 
+    ["2nd Place Name: " + second_person + ": with " + second_percent + "% and a vote count of " + second_count], 
+    ["3rd Place Name: " + third_person + ": with " + third_percent + "% and a vote count of " + third_count], 
+    ["4th Place Name: " + fourth_person + ": with " + fourth_percent + "% and a vote count of " + fourth_count], 
     ["---------------------------"], 
     ["Winner Name: " + "Congratulations " + winning_person + "!"], 
     ["---------------------------"]
@@ -71,13 +79,13 @@ output_path.write("Total Votes: " + str(total_votes))
 output_path.write("\n") 
 output_path.write("---------------------------")
 output_path.write("\n") 
-output_path.write("Winner Name: " + winning_person + " with a vote count of " + winning_count)
+output_path.write("Winner Name: " + winning_person + ": with " + winning_percent + "% and a vote count of " + winning_count)
 output_path.write("\n") 
-output_path.write("2nd Place Name: " + second_person + " with a vote count of " + second_count)
+output_path.write("2nd Place Name: " + second_person + ": with " + second_percent + "% and a vote count of " + second_count)
 output_path.write("\n")  
-output_path.write("3rd Place Name: " + third_person + " with a vote count of " + third_count)
+output_path.write("3rd Place Name: " + third_person + ": with " + third_percent + "% and a vote count of " + third_count)
 output_path.write("\n")  
-output_path.write("4th Place Name: " + fourth_person + " with a vote count of " + fourth_count)
+output_path.write("4th Place Name: " + fourth_person + ": with " + fourth_percent + "% and a vote count of " + fourth_count)
 output_path.write("\n")  
 output_path.write("---------------------------")
 output_path.write("\n") 
