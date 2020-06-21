@@ -25,7 +25,7 @@ with open (pathway) as csvfile:
         
 
 total_months = str(len(dates))
-average_change = str(int(sum_profit) / int(total_months))
+average_change = str(round(int(sum_profit) / int(total_months), 2))
 max_increase = max(profit)
 max_loss = min(loss)
 
