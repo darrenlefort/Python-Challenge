@@ -28,11 +28,6 @@ total_months = str(len(dates))
 average_change = str(int(sum_profit) / int(total_months))
 max_increase = max(profit)
 max_loss = min(loss)
-print(total_months)
-print(sum_profit)
-print(average_change)
-print(max_increase)
-print(max_loss)
 
 txt_header = "Financial Analysis"
 total_months = str(total_months)

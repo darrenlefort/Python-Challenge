@@ -1,11 +1,11 @@
 Election Results
 ---------------------------
-Total Votes: 
+Total Votes: 1048575
 ---------------------------
-Winner Name: 
-2nd Place Name: 
-3rd Place Name: 
-4th Place Name: 
+Winner Name: Khan with a vote count of 661583
+2nd Place Name: Correy with a vote count of 209046
+3rd Place Name: Li with a vote count of 146360
+4th Place Name: O'Tooley with a vote count of 31586
 ---------------------------
-Winner Name: 
+Winner Name: Congratulations Khan!
 ---------------------------
